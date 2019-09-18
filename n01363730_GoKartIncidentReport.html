@@ -1,0 +1,85 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Go Kart Incident Report</title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+</head>
+<body>
+    
+    <form method="POST" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+        <h1>GO KART CLAIM FORM - THEFT </h1>
+        <section>
+            <h2>Owners Details:</h2>
+            <label>First name:</label>
+            <input type="text" id="firstname" name="firstname" />
+            <label>Last Name:</label>
+            <input type="text" id="lastname" name="lastname" />
+            <label>Email Address:</label>
+            <input type="text" id="EmailAddress" name="EmailAddress" />
+        </section>
+        <section>
+            <h4>Go-Kart Location:</h4>
+            <label>Which Go-Kart location did the incident occur:</label>
+            <select id="Location" name="Go-Kart Location">
+                <option value="Toronto">Toronto</option>
+                <option value="Missusauga">Missusauga</option>
+                <option value="Brampton">Brampton</option>
+                <option value="Ottawa">Ottawa</option>
+                <option value="Windsor">Windsor</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>Insurance Details:</h2>
+            <label>Has the Owner made any Go Kart insurance claims in the last 2 years?</label>
+
+            <div>
+                <input type="radio" id="owner_insuranceclaim_yes" name="owner_insuranceclaim" value="YES" /><label for="Answer_YES">YES</label>
+            </div>
+            <div>
+                <input type="radio" id="owner_insuranceclaim_no" name="owner_insuranceclaim" value="NO" /><label for="Answer NO">NO</label>
+            </div>
+            <h3>If No, reason for skipping the insurance</h3>
+            <input type="text" id="InsuranceNotPaid" name="InsuranceNotPaid" />
+
+        </section>
+        <section>
+            <h2>Police Report:</h2>
+            <label>Was this incident reported to the police?</label>
+            <div>
+                <input type="radio" id="Police_incidentReport_yes" name="Police_IncidentReport" value="YES" /><label for="Answer_YES">YES</label>
+            </div>
+            <div>
+                <input type="radio" id="Police_incidentReport_no" name="Police_IncidentReport" value="NO" /><label for="Answer_NO">NO</label>
+            </div>
+        </section>
+        <section>
+            <label>Reasons that might be possible for the theft?</label>
+
+            <div>
+                <input type="checkbox" id="ReasonForTheft_1" name="ReasonForTheft_1" value="Reason_Rivelries" /><label for="ReasonForTheft_1">Rivelries</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ReasonForTheft_2" name="ReasonForTheft_2" value="Reason_High End Kart" /><label for="ReasonForTheft_2">High-end Kart</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ReasonForTheft_3" name="ReasonForTheft_3" value="Reason_NotSecuredEnough" /><label for="ReasonForTheft_3">Not securly kept at the time of incident</label>
+            </div>
+            <div>
+                <input type="checkbox" id="ReasonForTheft_4" name="ReasonForTheft_4" value="Other" /><label for="ReasonForTheft_4">Other</label>
+            </div>
+        </section>
+        <section>
+            <label>How old is the kart that has been stolen?</label>
+            <input type="text" id="AgeOfTheKart" name="AgeOfTheKart"/>
+        </section>
+        <section>
+            <input type="submit" value="submit" />
+        </section>
+</form>
+    
+</body>
+</html>
