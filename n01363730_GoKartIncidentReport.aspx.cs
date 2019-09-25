@@ -22,33 +22,34 @@ namespace n01363730_Assignment1
                 {
                     string Owner_Fname = owner_fname.Text.ToString();
                     string Owner_Lname = owner_lname.Text.ToString();
-                    string Owner_Email = owner_email.Text.ToString();
+                    string Owner_Phone = owner_phone.Text.ToString();
                     string Incident_Location = incident_location.SelectedValue.ToString();
                     string Insurance_Claim = insurnce_claim.SelectedValue.ToString();
                     int Insurance_Validity = Convert.ToInt32(insurance_validity.Text);
                     string Police_Incident_Report = police_incident_report.SelectedValue.ToString();
                     string Police_Response = police_response.SelectedValue.ToString();
-                    summary_claimForm.InnerHtml = "Thank you for applying for claiming your insurance! Your Summary is as follows: <br>";
-                    summary_claimForm.InnerHtml += " First Name: " + Owner_Fname + "<br>";
-                    summary_claimForm.InnerHtml += " Last Name: " + Owner_Lname + "<br>";
-                    summary_claimForm.InnerHtml += " Email ID: " + Owner_Email + "<br>";
-                    summary_claimForm.InnerHtml += " Location: " + Incident_Location + "<br>";
-                    summary_claimForm.InnerHtml += " Has the Owner made any Go Kart insurance claims in the last 2 years?: " + Insurance_Claim + "<br>";
-                    summary_claimForm.InnerHtml += " If Yes, how many years is the insurance valid?: " + Insurance_Validity + "<br>";
-                    summary_claimForm.InnerHtml += " Was this incident reported to the police? " + Police_Incident_Report + "<br>";
-                    summary_claimForm.InnerHtml += " Response from Police for the complaint raised: " + Police_Response + "<br>";
+                    //Summary
+                    summary_claimform.InnerHtml = "Thank you for applying for claiming your insurance! Your Summary is as follows: <br>";
+                    summary_claimform.InnerHtml += " First Name: " + Owner_Fname + "<br>";
+                    summary_claimform.InnerHtml += " Last Name: " + Owner_Lname + "<br>";
+                    summary_claimform.InnerHtml += " Email ID: " + Owner_Phone + "<br>";
+                    summary_claimform.InnerHtml += " Location: " + Incident_Location + "<br>";
+                    summary_claimform.InnerHtml += " Has the Owner made any Go Kart insurance claims in the last 2 years?: " + Insurance_Claim + "<br>";
+                    summary_claimform.InnerHtml += " If Yes, how many years is the insurance valid?: " + Insurance_Validity + "<br>";
+                    summary_claimform.InnerHtml += " Was this incident reported to the police? " + Police_Incident_Report + "<br>";
+                    summary_claimform.InnerHtml += " Response from Police for the complaint raised: " + Police_Response + "<br>";
 
                     if (Police_Response == "KartFound")
                     {
-                        summary_claimForm.InnerHtml = "Wow....Congratulations! No need of claim";
+                        summary_claimform.InnerHtml = "Wow....Congratulations! No need of claim";
                     }
                     if (Police_Response == "KartCouldNotBeFound")
                     {
-                        summary_claimForm.InnerHtml = "Don't worry...We got you";
+                        summary_claimform.InnerHtml = "Don't worry...We got you";
                     }
                     if (Police_Response == "CaseInvalid")
                     {
-                        summary_claimForm.InnerHtml = "Sorry..!! This claim cannot be processed"; ;
+                        summary_claimform.InnerHtml = "Sorry..!! This claim cannot be processed"; ;
 
                     }
                 }

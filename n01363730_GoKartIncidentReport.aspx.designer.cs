@@ -94,12 +94,12 @@ namespace n01363730_Assignment1 {
         protected global::System.Web.UI.WebControls.DropDownList police_response;
         
         /// <summary>
-        /// summary_claimForm control.
+        /// summary_claimform control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl summary_claimForm;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl summary_claimform;
     }
 }
