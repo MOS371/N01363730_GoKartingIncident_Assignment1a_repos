@@ -64,8 +64,8 @@
             <h3>Has the Owner made any Go Kart insurance claims in the last 2 years?</h3>
             
                 <asp:RadioButtonList runat="server" ID="insurnce_claim">
-                    <asp:ListItem Text="Yes" Value="YES"></asp:ListItem>
-                    <asp:ListItem Text="No" Value="No"></asp:ListItem>
+                    <asp:ListItem Text="Yes" Value="InsuranceClaim_Yes"></asp:ListItem>
+                    <asp:ListItem Text="No" Value="InsuranceClaim_No"></asp:ListItem>
                     </asp:RadioButtonList>
                 <asp:RequiredFieldValidator runat="server" 
                     EnableClientScript="true" 
@@ -88,8 +88,8 @@
             <h3>Was this incident reported to the police?</h3>
             
                 <asp:RadioButtonList runat="server" ID="police_incident_report">
-                    <asp:ListItem Text="Yes" Value="YES"></asp:ListItem>
-                    <asp:ListItem Text="No" Value="No"></asp:ListItem>
+                    <asp:ListItem Text="Yes" Value="Police_Incident_Report_Yes"></asp:ListItem>
+                    <asp:ListItem Text="No" Value="Police_Incident_Report_No"></asp:ListItem>
                     </asp:RadioButtonList>
                 <asp:RequiredFieldValidator runat="server" 
                     EnableClientScript="true" 
