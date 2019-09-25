@@ -22,84 +22,84 @@ namespace n01363730_Assignment1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Owners_fname control.
+        /// owner_fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Owners_fname;
+        protected global::System.Web.UI.WebControls.TextBox owner_fname;
         
         /// <summary>
-        /// Owners_lname control.
+        /// owner_lname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Owners_lname;
+        protected global::System.Web.UI.WebControls.TextBox owner_lname;
         
         /// <summary>
-        /// Owners_emailid control.
+        /// owner_email control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Owners_emailid;
+        protected global::System.Web.UI.WebControls.TextBox owner_email;
         
         /// <summary>
-        /// IncidentLocation control.
+        /// incident_location control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList IncidentLocation;
+        protected global::System.Web.UI.WebControls.DropDownList incident_location;
         
         /// <summary>
-        /// InsurnceClaim control.
+        /// insurnce_claim control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList InsurnceClaim;
+        protected global::System.Web.UI.WebControls.RadioButtonList insurnce_claim;
         
         /// <summary>
-        /// ReasonForSkippingInsurance control.
+        /// insurance_validity control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ReasonForSkippingInsurance;
+        protected global::System.Web.UI.WebControls.TextBox insurance_validity;
         
         /// <summary>
-        /// Police_IncidentReport control.
+        /// police_incident_report control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList Police_IncidentReport;
+        protected global::System.Web.UI.WebControls.RadioButtonList police_incident_report;
         
         /// <summary>
-        /// ReasonForTheft control.
+        /// police_response control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList ReasonForTheft;
+        protected global::System.Web.UI.WebControls.DropDownList police_response;
         
         /// <summary>
-        /// AgeOfTheKart control.
+        /// confirmbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox AgeOfTheKart;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmbox;
     }
 }
