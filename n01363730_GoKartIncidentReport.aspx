@@ -97,7 +97,7 @@
         </section>
        
         <section>
-            <h3>Response from Police for the complaint raised</h3>
+            <h3>Response from Police for the complaint raised(Please select "CaseInvalid" if the above option is NO )</h3>
             <asp:DropDownList runat="server" ID="police_response">
                 <asp:ListItem Text="---Choose One---" Value=""></asp:ListItem>
                 <asp:ListItem Text="KartFound" Value="KartFound"></asp:ListItem>

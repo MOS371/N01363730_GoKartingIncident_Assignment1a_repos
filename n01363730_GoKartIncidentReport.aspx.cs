@@ -34,22 +34,22 @@ namespace n01363730_Assignment1
                     summary_claimform.InnerHtml += " Last Name: " + Owner_Lname + "<br>";
                     summary_claimform.InnerHtml += " Email ID: " + Owner_Phone + "<br>";
                     summary_claimform.InnerHtml += " Location: " + Incident_Location + "<br>";
-                    summary_claimform.InnerHtml += " Has the Owner made any Go Kart insurance claims in the last 2 years?: " + Insurance_Claim + "<br>";
-                    summary_claimform.InnerHtml += " If Yes, how many years is the insurance valid?: " + Insurance_Validity + "<br>";
-                    summary_claimform.InnerHtml += " Was this incident reported to the police? " + Police_Incident_Report + "<br>";
-                    summary_claimform.InnerHtml += " Response from Police for the complaint raised: " + Police_Response + "<br>";
+                    summary_claimform.InnerHtml += " Go Kart insurance claim: " + Insurance_Claim + "<br>";
+                    summary_claimform.InnerHtml += " Insurance validity: " + Insurance_Validity + "<br>";
+                    summary_claimform.InnerHtml += " Police Report " + Police_Incident_Report + "<br>";
+                    summary_claimform.InnerHtml += " Final decision " + Police_Response + "<br>";
 
                     if (Police_Response == "KartFound")
                     {
-                        summary_claimform.InnerHtml = "Wow....Congratulations! No need of claim";
+                        summary_claimform.InnerHtml += "Wow....Congratulations! No need of claim";
                     }
                     if (Police_Response == "KartCouldNotBeFound")
                     {
-                        summary_claimform.InnerHtml = "Don't worry...We got you";
+                        summary_claimform.InnerHtml += "Don't worry...We got you";
                     }
                     if (Police_Response == "CaseInvalid")
                     {
-                        summary_claimform.InnerHtml = "Sorry..!! This claim cannot be processed"; ;
+                        summary_claimform.InnerHtml += "Sorry..!! This claim cannot be processed"; ;
 
                     }
                 }
