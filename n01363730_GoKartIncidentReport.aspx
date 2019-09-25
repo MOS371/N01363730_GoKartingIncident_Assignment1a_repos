@@ -23,12 +23,25 @@
             <h3>Last Name:</h3>
             <asp:TextBox runat="server" id="owner_lname"></asp:TextBox>
             </section>
-            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter the last name" ControlToValidate="owner_lname"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator runat="server" 
+                EnableClientScript="true" 
+                ErrorMessage="Please enter the last name" 
+                ControlToValidate="owner_lname"></asp:RequiredFieldValidator>
         <section>    
-            
+          <%/*
+             Regular expression source
+             Author:Jeff Atwood
+             Source:https://blog.codinghorror.com/regex-use-vs-regex-abuse/
+             Reason: Reson why I pickd this particular regular expression is that the way author explain the regular expression is understandable and clear
+               
+               */ %>  
         <h3>Owners Email:</h3>
-            <asp:TextBox runat="server" ID="owner_email"></asp:TextBox>
-        <asp:RegularExpressionValidator runat="server" EnableClientScript="true" ErrorMessage="Please enter the valid email Id" ControlToValidate="owner_email" validationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+            <asp:TextBox runat="server" ID="owner_phone"></asp:TextBox>
+        <asp:RegularExpressionValidator runat="server" 
+            EnableClientScript="true" 
+            ErrorMessage="Please enter the valid mobile number" 
+            ControlToValidate="owner_email" 
+            validationExpression="^\(*\d{3}\)*( |-)*\d{3}( |-)*\d{4}$"></asp:RegularExpressionValidator>
         </section>
         <section>
             <h3>Go-Kart Location:</h3>
@@ -40,7 +53,10 @@
                 <asp:ListItem Text="Ottawa" Value="Ottawa"></asp:ListItem>
                 <asp:ListItem Text="Windsor" Value="Windsor"></asp:ListItem>
                 </asp:DropDownList>    
-            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please select the City...Location pays a key role in claiming" ControlToValidate="incident_location"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator runat="server" 
+                EnableClientScript="true" 
+                ErrorMessage="Please select the City...Location pays a key role in claiming" 
+                ControlToValidate="incident_location"></asp:RequiredFieldValidator>
         </section>
          <h2>Insurance Details:</h2>
         <section>
@@ -51,12 +67,20 @@
                     <asp:ListItem Text="Yes" Value="YES"></asp:ListItem>
                     <asp:ListItem Text="No" Value="No"></asp:ListItem>
                     </asp:RadioButtonList>
-                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please select the insurance details" ControlToValidate="insurnce_claim"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator runat="server" 
+                    EnableClientScript="true" 
+                    ErrorMessage="Please select the insurance details"
+                    ControlToValidate="insurnce_claim"></asp:RequiredFieldValidator>
             </section>    
            <section>
             <h3>If Yes, how many years is the insurance valid?</h3>
             <asp:TextBox runat="server" id="insurance_validity"></asp:TextBox>
-            <asp:RangeValidator runat="server" EnableClientScript="true" ErrorMessage="Can not be claimed if the insurance is more than 5 years old, Sorry!!" ControlToValidate="insurance_validity" MinimumValue="1" MaximumValue="5"></asp:RangeValidator>
+            <asp:RangeValidator runat="server" 
+                EnableClientScript="true" 
+                ErrorMessage="Can not be claimed if the insurance is more than 5 years old, Sorry!!" 
+                ControlToValidate="insurance_validity"
+                MinimumValue="1"
+                MaximumValue="5"></asp:RangeValidator>
         </section>
         <h2>Police Report:</h2>
         <section>
@@ -67,7 +91,10 @@
                     <asp:ListItem Text="Yes" Value="YES"></asp:ListItem>
                     <asp:ListItem Text="No" Value="No"></asp:ListItem>
                     </asp:RadioButtonList>
-                <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="Please select the appropriate police report details" ControlToValidate="police_incident_report"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator runat="server" 
+                    EnableClientScript="true" 
+                    ErrorMessage="Please select the appropriate police report details" 
+                    ControlToValidate="police_incident_report"></asp:RequiredFieldValidator>
                
         </section>
        
@@ -79,12 +106,15 @@
                 <asp:ListItem Text="KartCouldNotBeFound" Value="KartCouldNotBeFound"></asp:ListItem>
                 <asp:ListItem Text="CaseInvalid" Value="CaseInvalid"></asp:ListItem>
                </asp:DropDownList>
-            <asp:RequiredFieldValidator runat="server" EnableClientScript="true" ErrorMessage="This field should be selected..as the claim result depends on it" ControlToValidate="police_response"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator runat="server" 
+                EnableClientScript="true" 
+                ErrorMessage="This field should be selected..as the claim result depends on it" 
+                ControlToValidate="police_response"></asp:RequiredFieldValidator>
         </section>
         <section>
             <asp:ValidationSummary runat="server" ShowSummary="true" />
         </section>
-        <section id="confirmbox" runat="server">
+        <section id="summary_claimForm" runat="server">
 
         </section>
         <section>

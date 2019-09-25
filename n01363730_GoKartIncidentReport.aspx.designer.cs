@@ -40,13 +40,13 @@ namespace n01363730_Assignment1 {
         protected global::System.Web.UI.WebControls.TextBox owner_lname;
         
         /// <summary>
-        /// owner_email control.
+        /// owner_phone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox owner_email;
+        protected global::System.Web.UI.WebControls.TextBox owner_phone;
         
         /// <summary>
         /// incident_location control.
@@ -94,12 +94,12 @@ namespace n01363730_Assignment1 {
         protected global::System.Web.UI.WebControls.DropDownList police_response;
         
         /// <summary>
-        /// confirmbox control.
+        /// summary_claimForm control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl confirmbox;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl summary_claimForm;
     }
 }

@@ -28,27 +28,27 @@ namespace n01363730_Assignment1
                     int Insurance_Validity = Convert.ToInt32(insurance_validity.Text);
                     string Police_Incident_Report = police_incident_report.SelectedValue.ToString();
                     string Police_Response = police_response.SelectedValue.ToString();
-                    confirmbox.InnerHtml = "Thank you for applying for claiming your insurance! Your Summary is as follows: <br>";
-                    confirmbox.InnerHtml += " First Name: " + Owner_Fname + "<br>";
-                    confirmbox.InnerHtml += " Last Name: " + Owner_Lname + "<br>";
-                    confirmbox.InnerHtml += " Email ID: " + Owner_Email + "<br>";
-                    confirmbox.InnerHtml += " Location: " + Incident_Location + "<br>";
-                    confirmbox.InnerHtml += " Has the Owner made any Go Kart insurance claims in the last 2 years?: " + Insurance_Claim + "<br>";
-                    confirmbox.InnerHtml += " If Yes, how many years is the insurance valid?: " + Insurance_Validity + "<br>";
-                    confirmbox.InnerHtml += " Was this incident reported to the police? " + Police_Incident_Report + "<br>";
-                    confirmbox.InnerHtml += " Response from Police for the complaint raised: " + Police_Response + "<br>";
+                    summary_claimForm.InnerHtml = "Thank you for applying for claiming your insurance! Your Summary is as follows: <br>";
+                    summary_claimForm.InnerHtml += " First Name: " + Owner_Fname + "<br>";
+                    summary_claimForm.InnerHtml += " Last Name: " + Owner_Lname + "<br>";
+                    summary_claimForm.InnerHtml += " Email ID: " + Owner_Email + "<br>";
+                    summary_claimForm.InnerHtml += " Location: " + Incident_Location + "<br>";
+                    summary_claimForm.InnerHtml += " Has the Owner made any Go Kart insurance claims in the last 2 years?: " + Insurance_Claim + "<br>";
+                    summary_claimForm.InnerHtml += " If Yes, how many years is the insurance valid?: " + Insurance_Validity + "<br>";
+                    summary_claimForm.InnerHtml += " Was this incident reported to the police? " + Police_Incident_Report + "<br>";
+                    summary_claimForm.InnerHtml += " Response from Police for the complaint raised: " + Police_Response + "<br>";
 
                     if (Police_Response == "KartFound")
                     {
-                        confirmbox.InnerHtml = "Wow....Congratulations! No need of claim";
+                        summary_claimForm.InnerHtml = "Wow....Congratulations! No need of claim";
                     }
                     if (Police_Response == "KartCouldNotBeFound")
                     {
-                        confirmbox.InnerHtml = "Don't worry...We got you";
+                        summary_claimForm.InnerHtml = "Don't worry...We got you";
                     }
                     if (Police_Response == "CaseInvalid")
                     {
-                        confirmbox.InnerHtml = "Sorry..!! This claim cannot be processed"; ;
+                        summary_claimForm.InnerHtml = "Sorry..!! This claim cannot be processed"; ;
 
                     }
                 }
